@@ -3,11 +3,9 @@ import os # debug
 
 # app = Flask(__name__)
 app = Flask(__name__, template_folder='.')  # esto indica que la carpeta de templates está en el directorio actual
-# app = Flask(__name__, template_folder='templates/')  # esto indica que
 
 @app.route('/')
 def hello():
-    # return "¡Hola desde Docker!"
     return render_template('index.html')
 
 if __name__ == '__main__':
